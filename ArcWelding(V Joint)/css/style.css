@@ -1,0 +1,612 @@
+html
+{
+    -moz-user-select     : none;
+    -khtml-user-select   : none;
+    -webkit-user-select  : none;
+    -o-user-select       : none;
+    user-select          : none;
+}
+#simscreen
+{
+    position: relative;
+    left:0px;
+    top:0px;
+    height: 600px;
+    width:800px;
+    background-image: url("../images/background.png");
+}
+
+#copyright{
+position: absolute;
+left:50px;
+top: 577px;
+font-family: verdana;
+font-size:12px
+}
+
+#title{
+position:relative;
+left:50px;
+top:25px;
+height:40px;
+font-size: 24px;
+text-align:center;
+/* background-color: black; */
+font-family: 'Times New Roman', Times, serif;
+/* color: White; */
+text-transform: uppercase;
+}
+
+#title h3{
+padding-top:2px;
+margin:0px;
+}
+
+#objective{
+    /* t r b l */
+    padding: 5px 0 2px 0;
+    margin: 35px 0 0 0;
+}
+
+#apparatus{
+    /* t r b l */
+    padding: 5px 0 2px 0;
+    margin: 5px 0 0 0;
+}
+#question-div{
+	position: absolute;
+	left:300px;
+	top:350px;
+	width:300px;
+	height:120px;
+	border:solid 1px gray;
+	background-color: gray;
+	filter: alpha(opacity=55);
+	color:white;
+	visibility:hidden;
+}
+
+.simsubscreen
+{
+position:absolute;
+left: 50px;
+top: 50px;
+height:530px;
+width:745px;
+
+
+}
+
+.incanvas
+{
+margin:5px 0 0 5px;
+}
+#nextButton{
+    position: absolute;
+    left: 740px;
+    top: 520px;
+    cursor:pointer;
+}
+#nextButton1{
+    position: absolute;
+    left: 750px;
+    top: 530px;
+cursor:pointer;
+}
+
+#prevButton{
+    position: absolute;
+    left: 0px;
+    top: 532px;
+    cursor:pointer;
+}
+
+#reButton{
+    position: absolute;
+    left: 740px;
+    top: 520px;
+    visibility: hidden;
+    cursor:pointer;
+}
+
+.steptext{
+    display:inline;
+    position: absolute;
+    top: 40px;
+}
+
+.steptext-6{
+display:inline;}
+
+.steptext-2{display:inline;}
+
+.circlebg
+{
+border-radius:100%;
+font-size:25px;
+color:#fff;
+text-align:center;
+background:#000
+}
+
+
+
+/* -------------------------------------- water ---------------------------------------- */
+/* Chrome, Safari, Opera */
+
+/* @-webkit-keyframes water-4 {
+0% {-webkit-transform: translate(0, 0 );}
+100% {-webkit-transform: translate(0, -20px );}
+}
+
+/* Standard syntax */
+@keyframes moveelectrode {
+    0%{left:245px;top:105px;}
+    50%{left:83px;top:178px;}
+	100% {left:0px;top:55px;}
+}
+
+@-webkit-keyframes moveelectrode {
+  0%{left:245px;top:105px;}
+  50%{left:83px;top:178px;}
+100% {left:0px;top:55px;}
+}
+
+@keyframes movepiece{
+    0% { transform: rotate(0deg);}
+    100%{  transform: rotate(180deg);  }
+}
+
+@-webkit-keyframes  movepiece{
+  0% { transform: rotate(0deg);}
+  100%{  transform: rotate(170deg);  }
+}
+
+
+@keyframes movespark
+{
+  from {left:465px;top:325px;}
+	to {left:303px;top:398px;visibility: hidden;}
+}
+@-webkit-keyframes movespark
+{
+  from {left:465px;top:325px;}
+	to {left:303px;top:398px;visibility: hidden;}
+}
+@keyframes movew2 {
+    0% {left:30px;top:270px;}
+    100%{left:230px;top:270px;}
+}
+
+@-webkit-keyframes movew2{
+
+     0% {left:30px;top:270px;}
+     100%{left:230px;top:270px;}
+ }
+ @keyframes movew1 {
+     0% {left:430px;top:270px;}
+     100%{left:120px;top:270px;}
+ }
+
+ @-webkit-keyframes movew1
+   {
+      0% {left:430px;top:270px;}
+      100%{left:120px;top:270px;}
+  }
+@keyframes movebrush {
+  0% {left:90px;top:250px;}
+    50%{left:170px;top:200px;}
+    100% {left:90px;top:250px;}
+}
+
+@-webkit-keyframes movebrush{
+0% {left:190px;top:250px;}
+  50%{left:200px;top:150px;}
+  100% {left:190px;top:250px;}
+}
+
+@keyframes movePattern {
+    0% {left:190px;top:250px;}
+    25%{left:80px;top:250px;}
+    60%{left:220px;top:220px;}
+	70% {left:380px;top:220px;}
+  100%{left:250px;top:270px;}
+}
+
+@-webkit-keyframes movePattern{
+  0% {left:190px;top:250px;}
+  25%{left:80px;top:250px;}
+  60%{left:220px;top:220px;}
+  70% {left:380px;top:220px;}
+  100%{left:250px;top:270px;}
+}
+
+@keyframes moveweld
+{
+  from {left:230px;top:67px;}
+  to {left:50px;top:145px;}
+  }
+}
+@-webkit-keyframes moveweld
+{
+  from {left:230px;top:67px;}
+	to {left:50px;top:145px;}
+}
+
+@keyframes movehammer {
+    0%{left:450px;top:65px;}
+    20%{left:265px;top:200px;
+        transform:rotate(-30deg);}
+	70% {left:80px;top:310px;}
+  100% {left:450px;top:85px;}
+}
+
+@-webkit-keyframes movehammer {
+  0%{left:450px;top:65px;}
+  20%{left:265px;top:200px;
+      transform:rotate(-30deg);}
+70% {left:80px;top:310px;}
+100% {left:450px;top:85px;}
+}
+
+
+@keyframes movedial{
+    0% {
+        left:230px;top:270px;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        left:230px;top:270px;
+        transform: rotate(80deg);
+    }
+}
+@-webkit-keyframes movedial{
+
+      0% {
+          left:230px;top:270px;
+          transform: rotate(0deg);
+      }
+
+      100%{
+          left:230px;top:270px;
+          transform: rotate(80deg);
+      }
+}
+
+@keyframes moveelectrode1 {
+    from{left:0px;top:55px;}
+    to{left:255px;top:70px;}
+
+}
+
+@-webkit-keyframes moveelectrode1 {
+  from{left:0px;top:55px;}
+  to{left:255px;top:70px;}
+}
+
+@keyframes moveelectrode2 {
+    0%{left:255px;top:70px;}
+    50%{left:235px;top:30px;}
+	100% {left:210px;top:88px;}
+}
+
+@-webkit-keyframes moveelectrode2 {
+  0%{left:255px;top:70px;}
+  50%{left:235px;top:30px;}
+100% {left:210px;top:88px;}
+}
+
+@keyframes moveelectrode3 {
+  0%{left:210px;top:88px;}
+  50%{left:185px;top:50px;}
+100% {left:165px;top:105px;}
+}
+
+@-webkit-keyframes moveelectrode3 {
+  0%{left:210px;top:88px;}
+  50%{left:185px;top:50px;}
+100% {left:165px;top:105px;}
+}
+
+@keyframes moveelectrode4 {
+  0%{left:165px;top:105px;}
+  50%{left:140px;top:70px;}
+100% {left:120px;top:125px;}
+}
+
+@-webkit-keyframes moveelectrode4 {
+  0%{left:165px;top:105px;}
+  50%{left:140px;top:70px;}
+100% {left:120px;top:125px;}
+}
+
+@keyframes moveelectrode5 {
+    from{left:120px;top:125px;}
+    to{left:0px;top:55px;}
+
+}
+
+@-webkit-keyframes moveelectrode5 {
+  from{left:120px;top:125px;}
+  to{left:0px;top:55px;}
+}
+
+
+
+@keyframes movespark1 {
+    0%{left:0px;top:55px;}
+    99%{left:255px;top:70px;visibility: hidden;}
+    100%{left:255px;top:70px;visibility:visible;}
+}
+
+@-webkit-keyframes movespark1 {
+  0%{left:0px;top:55px;}
+  99%{left:255px;top:70px;visibility: hidden;}
+  100%{left:255px;top:70px;visibility:visible;}
+
+}
+
+@keyframes movespark2 {
+    0%{left:255px;top:70px;}
+    99%{left:210px;top:88px;visibility: hidden;}
+    100%{left:210px;top:88px;visibility:visible;}
+}
+
+@-webkit-keyframes movespark2 {
+  0%{left:255px;top:70px;}
+  99%{left:210px;top:88px;visibility: hidden;}
+  100%{left:210px;top:88px;visibility:visible;}
+}
+
+@keyframes movespark3 {
+  0%{left:210px;top:88px;}
+  99%{left:165px;top:105px;visibility: hidden;}
+100% {left:165px;top:105px;visibility: visible;}
+}
+
+@-webkit-keyframes movespark3 {
+  0%{left:210px;top:88px;}
+  99%{left:165px;top:105px;visibility: hidden;}
+100% {left:165px;top:105px;visibility: visible;}
+}
+
+@keyframes movespark4 {
+  0%{left:165px;top:105px;}
+  99%{left:120px;top:125px;visibility: hidden;}
+  100% {left:120px;top:125px;visibility: visible;}
+}
+
+@-webkit-keyframes movespark4 {
+  0%{left:165px;top:105px;}
+  99%{left:120px;top:125px;visibility: hidden;}
+  100% {left:120px;top:125px;visibility: visible;}
+}
+
+@keyframes movespark5 {
+    from{left:120px;top:125px;visibility: hidden;}
+    to{left:0px;top:55px;visibility: hidden;}
+
+}
+
+@-webkit-keyframes movespark5 {
+  from{left:120px;top:125px;visibility: hidden;}
+  to{left:0px;top:55px;visibility:hidden;}
+}
+
+
+@keyframes metalrotate
+{
+	from {transform: rotate(0deg)}
+	to {transform: rotate(120deg)}
+}
+@-webkit-keyframes metalrotate
+{
+	from {transform: rotate(0deg)}
+	to {transform: rotate(120deg)}
+}
+
+
+@keyframes movebrush1 {
+  0%{left:430px;top:185px;}
+  10%{left:90px;top:240px;}
+  30%{left:20px;top:305px;}
+  50%{left:190px;top:240px;}
+  70%{left:180px;top:305px;}
+  90%{left:390px;top:240px;}
+  100% {left:430px;top:185px;}
+}
+
+@-webkit-keyframes movebrush1{
+  0%{left:430px;top:185px;}
+  10%{left:90px;top:240px;}
+  30%{left:20px;top:305px;}
+  50%{left:190px;top:240px;}
+  70%{left:180px;top:305px;}
+  90%{left:390px;top:240px;}
+  100% {left:430px;top:185px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chrome, Safari, Opera */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Standard syntax */
+@keyframes water-5 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, -35px);}
+}
+/* -------------------------------------- constant speed arrow ---------------------------------------- */
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrow-1 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(-50deg);}
+}
+
+/* Standard syntax */
+@keyframes arrow-1 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-50deg);}
+}
+/* -------------------------------------- constant speed arrow 2 ---------------------------------------- */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrow-11 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(70deg);}
+}
+
+/* Standard syntax */
+@keyframes arrow-11 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(70deg);}
+}
+
+
+
+/* -------------------------------------- ---------------------------------------- */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes valveturn-2 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(-20deg);}
+}
+
+/* Standard syntax */
+@keyframes valveturn-2 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes valveturn-4 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(-20deg);}
+}
+
+/* Standard syntax */
+@keyframes valveturn-4 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+
+/* Standard syntax */
+@keyframes water0 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, -100px);}
+}
+
+/* Standard syntax */
+@keyframes water0 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, -100px);}
+}
+
+
+/*-----------------------------------------hook gauge----------------------- */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myhook-1 {
+0% {-webkit-transform: translate(0, 0 );}
+50% {-webkit-transform: translate(0, -15px );}
+
+100% {-webkit-transform: translate(0, 8px );}
+}
+
+/* Standard syntax */
+@keyframes myhook-1 {
+    0% {transform: translate(0, 0);}
+	50% {transform: translate(0, -15px);}
+
+
+    100% {transform: translate(0, 8px);}
+}
+
+@-webkit-keyframes myhook-2 {
+0% {-webkit-transform: translate(0, 0 );}
+50% {-webkit-transform: translate(0, -50px );}
+
+100% {-webkit-transform: translate(0, -15px );}
+}
+
+/* Standard syntax */
+@keyframes myhook-2 {
+    0% {transform: translate(0, 0px);}
+	50% {transform: translate(0, -50px);}
+
+
+    100% {transform: translate(0, -15px);}
+}
+
+
+/*-----------------------------------------blink----------------------- */
+
+@keyframes bucketMove
+{
+	from {left:50px;top:150px;}
+	to {left:550px;top:150px;}
+}
+@-webkit-keyframes bucketMove
+{
+	from {left:50px;top:150px;}
+	to {left:550px;top:150px;}
+}
+
+@keyframes bucketScale
+{
+	from {transform: scale(1)}
+	to {transform: scale(2)}
+}
+@-webkit-keyframes bucketScale
+{
+	from {transform: scale(1)}
+	to {transform: scale(5)}
+}
+
+@keyframes bucketRotate
+{
+	from {transform: rotate(0deg)}
+	to {transform: rotate(30deg)}
+}
+@-webkit-keyframes bucketRotate
+{
+	from {transform: rotate(0deg)}
+	to {transform: rotate(30deg)}
+}
+
+@keyframes waterMove
+{
+	0% {left:450px;top:300px;}
+	100% {left:450px;top:250px;}
+}
+@-webkit-keyframes waterMove
+{
+	0% {left:450px;top:300px;}
+	100% {left:450px;top:250px;}
+} */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        var simsubscreennum=0;
+        var temp=0;
+    </script>
+</head>
+<!--Simulation Screen start		-->
+<div id="simscreen">
+
+    <!--Title of Simulation		-->
+    <div id="title"><h3>ARC WELDING(V-BUTT JOINT)</h3></div>
+
+    <!--SubScreen Home	-->
+    <div class="simsubscreen" id="canvas0">
+    <h4 id="objective" style="font-family:verdana; ">Objective:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:15px;">To Prepare a v joint using arc welding process.</p></br>
+    <h4 id="apparatus" style="font-family:verdana; ">Apparatus used:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:14px;">Wire Brush, Grinding Machine, Protective Equipments, Welding Transformer, Electrodes, Tong, Chipping Hammer, Mild steel flat of 60x45x10mm etc.</p>
+    <img id="" style="position: absolute; left: 350px; top: 280px; width:400px;" title="Welding Machine" src="Images/machine.png"/>
+    <img id="" style="position:absolute; left:300px; top:260px; width:250px" title="Welding Helmet" src="Images/face.png" />
+    <img id="" style="position:absolute; left:390px; top:330px; width:250px" title="Gloves" src="Images/gloves.png" />
+    <img id="" style="position:absolute; left:5px; top:340px; width:250px" title="Workpiece" src="Images/metal.png" />
+    <img id="" style="position:absolute; left:5px; top:300px; width:250px" title="Workpiece" src="Images/metal.png" />
+    <img id="" style="position:absolute; left:220px;top:375px;width:150px;" title="grinder" src="./images/grinder.png" />
+    <img id="" style="position:absolute; left:230px;top:255px;width:200px;" title="Chipping Hammer" src="./images/hammer.png" />
+    <!-- <img id="" style="position:absolute; left:5px; top:340px; width:250px" title="sand" src="Images/metal.png" /> -->
+
+
+    <!-- <img id="" style="position:absolute; left:250px;top:250px;" title="sand" src="./images/box.png" /> -->
+    </div>
+
+    <!--Step1	-->
+    <div class="simsubscreen" id="canvas1" style="visibility:hidden">
+    <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> <strong id="titlestep" class="incanvas">STEP </strong>
+    <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>Clean the given workpiece thoroughly,i.e. remove the rust, scales and form v cutting in the edges.</p>
+    <img id="workpiece" style="position:absolute; left:110px;top:330px;width:320px;" title="Workpiece" src="./images/metal.png" />
+    <img id="metal1" style="position:absolute; left:110px;top:330px;width:320px;visibility:hidden;" title="Workpiece" src="./images/metal1.png" />
+    <img id="grinder" style="position:absolute; left:450px;top:355px;width:250px;cursor:pointer;" title="grinder" src="./images/grinder.png" />
+    <img id="brush" style="position:absolute; left:430px;top:185px;width:350px;visibility:hidden;" title=" brush" src="./images/brush.png" />
+    </div>
+
+    <!--Step2	-->
+    <div class="simsubscreen" id="canvas2" style="visibility:hidden">
+    <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"><strong id="titlestep" class="incanvas">STEP</strong>
+    <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>&nbsp;Align the  workpieces properly to form a vjoint.</p>
+    <img id="w2" style="position:absolute; left:30px;top:270px;width:300px;cursor:pointer;" title="workpiece1" src="./images/metal1.png" />
+    <img id="w1" style="position:absolute; left:430px;top:270px;width:300px;" title="workpiece2" src="./images/metal1.png" />
+    <img id="lj" style="position:absolute; left:40px;top:95px;width:650px;visibility:hidden;" title="workpiece" src="./images/metal2.png" />
+    </div>
+
+
+    <!--Step3	-->
+    <div class="simsubscreen" id="canvas3" style="visibility:hidden">
+    <p id="pumptext" class="steptext incanvas" style="font-family:verdana; font-size:14px;">
+    <strong id="titlestep" class="incanvas">STEP </strong>
+    <span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
+     Turn your pieces over.</p>
+    <img id="p1" style="position:absolute; left:30px;top:270px;width:300px;cursor:pointer;" title="workpiece1" src="./images/metal1.png" />
+    <img id="p2" style="position:absolute; left:200px;top:270px;width:300px;" title="workpiece2" src="./images/metal1.png" />
+    <img id="final" style="position:absolute; left:60px;top:270px;width:500px;visibility:hidden;" title="workpiece" src="./images/metal3.png" />
+
+    </div>
+
+    <!--Step4	-->
+    <div class="simsubscreen" id="canvas4" style="visibility:hidden">
+    <p id="pumptext-2" class="steptext" style="font-family:verdana; font-size:14px;"><strong id="titlestep" class="incanvas">STEP</strong>
+    <span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>&nbsp;
+     Adjust the current in machine .</p>
+    <img id="mac" style="position:absolute; left:330px;top:270px;width:350px;cursor:pointer;" title="Welding Machine" src="./images/machine.png" />
+    <img id="knob" style="position:absolute; left:121px;top:210px;width:200px;visibility:hidden;" title="Dial" src="./images/knob.png" />
+    <img id="dial" style="position:absolute; left:450px;top:150px;width:53px;visibility:hidden;" title="Dial" src="./images/dial.png" />
+
+    </div>
+
+
+
+
+    <!--Step5	-->
+    <div class="simsubscreen" id="canvas5" style="visibility:hidden">
+    <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> <strong id="titlestep" class="incanvas">STEP </strong>
+    <span class="circlebg" id="stepnumber">&nbsp;5&nbsp;</span> Make tack welds.To make a tack weld, strike an arc and let it sit for a few seconds. </p>
+
+    <img id="" style="position:absolute; left:30px;top:165px;width:850px;" title="Workpiece" src="./images/metal31.png" />
+    <img id="spark" style="position:absolute; left:0px;top:55px;width:600px;visibility:hidden;"  src="./images/spark1.png" />
+    <img id="electrode" style="position:absolute; left:0px;top:55px;width:355px;cursor:pointer;" title="Electrode" src="./images/electrode.png" />
+    <img id="s1" style="position:absolute; left:252px;top:70px;width:600px;visibility:hidden;" title="Workpiece"  src="./images/spot.png" />
+    <img id="s2" style="position:absolute; left:210px;top:88px;width:600px;visibility:hidden;" title="Workpiece"  src="./images/spot.png" />
+    <img id="s3" style="position:absolute; left:165px;top:108px;width:600px;visibility:hidden;" title="Workpiece"  src="./images/spot.png" />
+    <img id="s4" style="position:absolute; left:120px;top:125px;width:600px;visibility:hidden;" title="Workpiece" src="./images/spot.png" />
+
+    </div>
+
+
+    <!--Step6	-->
+    <div class="simsubscreen" id="canvas6" style="visibility:hidden">
+    <p id="pumptext-2" class="steptext" style="font-family:verdana; font-size:14px;"><strong id="titlestep" class="incanvas">STEP</strong>
+    <span class="circlebg" id="stepnumber">&nbsp;6&nbsp;</span>&nbsp; Flip your metal over to be welded.</p>
+    <img id="metal4" style="position:absolute; left:-200px;top:220px;width:750px;cursor:pointer;" title="Workpiece" src="./images/metal4.png" />
+    <img id="metal2" style="position:absolute; left:100px;top:160px;width:650px;visibility:hidden;" title="Workpiece" src="./images/metal2.png" />
+
+    </div>
+
+    <!--Step7	-->
+     <div class="simsubscreen" id="canvas7" style="visibility:hidden">
+     <p id="pumptext-2" class="steptext" style="font-family:verdana; font-size:14px;"><strong id="titlestep" class="incanvas">STEP</strong>
+     <span class="circlebg" id="stepnumber">&nbsp;7&nbsp;</span>&nbsp; Strike the arc and move the electrode to the other end uniformly.</p>
+
+     <img id="" style="position:absolute; left:50px;top:145px;width:750px;" title="Workpiece" src="./images/metal2.png" />
+     <img id="weld" style="position:absolute; left:230px;top:67px;width:750px; "title="Workpiece" src="./images/weld.png" />
+     <img id="blank" style="position:absolute; left:50px;top:145px;width:750px;"  src="./images/blank.png" />
+     <img id="weld1" style="position:absolute; left:50px;top:145px;width:750px;visibility:hidden;" title="Workpiece"  src="./images/weld1.png" />
+     <img id="dust" style="position:absolute; left:50px;top:145px;width:750px" title="Workpiece"  src="./images/dust.png" />
+     <img id="spark1" style="position:absolute; left:465px;top:325px;width:100px;visibility:hidden;"  src="./images/spark.png" />
+     <img id="electrode1" style="position:absolute; left:0px;top:55px;width:355px;cursor:pointer;" title="Electrode" src="./images/electrode.png" />
+
+     </div>
+
+     <!--Step8-->
+     <div class="simsubscreen" id="canvas8" style="visibility:hidden">
+     <p id="pumptext" class="steptext incanvas" style="font-family:verdana; font-size:14px;">
+     <strong id="titlestep" class="incanvas">STEP </strong>
+     <span class="circlebg" id="stepnumber">&nbsp;8&nbsp;</span> Clean the weld with a hammer and wire brush.</p>
+     <img id="" style="position:absolute; left:-120px;top:165px;width:750px;" title="Workpiece" src="./images/metal2.png" />
+     <img id="" style="position:absolute; left:-120px;top:165px;width:750px;"  src="./images/weld.png" />
+     <img id="" style="position:absolute; left:-120px;top:165px;width:750px;" title="Workpiece" src="./images/weld1.png" />
+     <img id="dust1" style="position:absolute; left:-120px;top:165px;width:750px;" title="Workpiece"  src="./images/dust.png" />
+     <img id="brush1" style="position:absolute; left:430px;top:185px;width:350px;"  src="./images/brush.png" />
+     <img id="hammer" style="position:absolute; left:450px;top:85px;width:300px;cursor:pointer;"  src="./images/hammer.png" />
+
+     </div>
+
+    <!--Trial text	-->
+    <div id="">
+    <p id="trial" style="text-transform: uppercase;visibility :hidden;font-weight: bold;font-family:verdana; "><strong>Trial = </strong></p>
+    </div>
+
+
+    <!--next  Arrow	-->
+    <div id="nav">
+        <img id="nextButton" onclick="navNext(); " src="Images/Next.png" />
+    </div>
+
+    <div>
+        <img id="reButton" input type="button" value="Reload Page" onClick="document.location.reload(true);" src="Images/restart.png" / >
+    </div>
+
+    <!--Blinking Arrow	-->
+    <img class ="" id="arrow1" style="visibility:hidden" src="Images/arrow1.png"/>
+
+    <div id="copyright"> &copy; 2020 SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+    <script src="./js/sample.js"></script>
+    </body>
+    </html>
